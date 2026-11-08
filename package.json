@@ -1,0 +1,32 @@
+{
+  "name": "hydration-safe-inputs",
+  "version": "0.1.0",
+  "description": "Keep what users type before React hydrates. Drop-in inputs and a submit button for SSR apps (Next.js, Remix, React Router).",
+  "keywords": ["react", "hydration", "ssr", "nextjs", "forms", "input", "react-19"],
+  "license": "MIT",
+  "author": "Bahri Yılmaz (https://bahriyilmaz.dev)",
+  "repository": { "type": "git", "url": "git+https://github.com/bahriy-dev/hydration-safe-inputs.git" },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "files": ["dist"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "peerDependencies": { "react": ">=18" },
+  "devDependencies": {
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "jsdom": "30.1.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "typescript": "^5",
+    "vitest": "4.1.12"
+  },
+  "engines": { "node": ">=20" }
+}
