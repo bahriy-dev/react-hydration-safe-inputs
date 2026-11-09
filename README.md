@@ -1,6 +1,6 @@
 # hydration-safe-inputs
 
-[![CI](https://github.com/bahriy-dev/hydration-safe-inputs/actions/workflows/ci.yml/badge.svg)](https://github.com/bahriy-dev/hydration-safe-inputs/actions/workflows/ci.yml)
+[![CI](https://github.com/bahriy-dev/react-hydration-safe-inputs/actions/workflows/ci.yml/badge.svg)](https://github.com/bahriy-dev/react-hydration-safe-inputs/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![React 18+](https://img.shields.io/badge/react-18%2B-61dafb)
 
@@ -19,13 +19,13 @@ Two things go wrong if the user acts in it:
 
 The first one is a silent correctness bug. In a hash tool, for example, the field shows `abc` while the result is the
 hash of the empty string. I found it while fixing intermittent Playwright failures in
-[parola-olustur](https://github.com/bahriy-dev/parola-olustur/pull/9): slow CI runners hit the window, and real users
+[parola-olustur](https://github.com/bahriy-dev/password-generator-parola-olustur/pull/9): slow CI runners hit the window, and real users
 on slow devices do too.
 
 ## Install
 
 ```bash
-npm install github:bahriy-dev/hydration-safe-inputs
+npm install github:bahriy-dev/react-hydration-safe-inputs
 ```
 
 ## Usage
